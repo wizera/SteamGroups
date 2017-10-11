@@ -117,7 +117,8 @@ namespace Oxide.Plugins
             //else RemoveOldMembers();
         }
 
-        private bool InSteamGroup(string id) => members.Contains(id);
+        [HookMethod("InSteamGroup")]
+        public bool InSteamGroup(string id) => members.Contains(id);
 
         #endregion
 
