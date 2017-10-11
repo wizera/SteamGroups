@@ -6,11 +6,12 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Newtonsoft.Json;
+using Oxide.Core.Plugins;
 using Oxide.Core.Libraries.Covalence;
 
 namespace Oxide.Plugins
 {
-    [Info("Steam Groups", "Wulf/lukespragg", "0.3.6", ResourceId = 2085)]
+    [Info("Steam Groups", "Wulf/lukespragg", "0.3.7", ResourceId = 2085)]
     [Description("Automatically adds members of Steam group(s) to a permissions group")]
     public class SteamGroups : CovalencePlugin
     {
